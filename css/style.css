@@ -1,0 +1,88 @@
+/* ==========================================================================
+   DAPUR MANIS - ARTISAN HOME BAKERY
+   Custom Styling & Design Tokens (Figma Exact Specifications)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --color-brand-primary: #6f3c14;
+  --color-brand-dark: #462308;
+  --color-brand-hover: #562e0f;
+  --color-brand-accent: #904d00;
+  --color-brand-amber: #d97706;
+  --color-brand-green: #15803d;
+  --color-brand-green-hover: #166534;
+  
+  --color-bg-cream: #fef9f1;
+  --color-bg-beige: #f5ece0;
+  --color-bg-card: #f8f2e8;
+  --color-text-main: #6f3c14;
+  --color-text-body: #5e544a;
+  
+  --color-border-subtle: #e8dec8;
+  --color-border-card: #eadbca;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: var(--color-text-body);
+  background-color: var(--color-bg-cream);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Serif font style for headings according to Figma design */
+.font-serif {
+  font-family: 'Playfair Display', Georgia, Cambria, 'Times New Roman', Times, serif;
+}
+
+/* Micro-animations & interactive states */
+.btn-hover-lift {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px -5px rgba(111, 60, 20, 0.25);
+}
+
+.card-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 28px -6px rgba(111, 60, 20, 0.12);
+  border-color: #d8c7ad;
+}
+
+/* Custom CTA gradient exact from Figma (stop 0: #6f3c14, stop 50: #5d3210, stop 100: #462308) */
+.bg-cta-gradient {
+  background: linear-gradient(135deg, #6f3c14 0%, #5d3210 50%, #462308 100%);
+}
+
+/* Glassmorphism utility */
+.glass-panel {
+  background: rgba(254, 249, 241, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.glass-badge {
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* Safe area padding for mobile bottom bar */
+.pb-mobile-bar {
+  padding-bottom: 5.5rem;
+}
+
+@media (min-width: 768px) {
+  .pb-mobile-bar {
+    padding-bottom: 0;
+  }
+}
