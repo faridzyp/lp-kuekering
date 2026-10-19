@@ -1,5 +1,5 @@
 /**
- * Dapur Manis - Artisan Home Bakery
+ * Naufal Dwi Cookies
  * Lightweight Client Script
  */
 
